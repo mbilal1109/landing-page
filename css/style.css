@@ -52,6 +52,7 @@ nav a {
 
 .section-1 p {
     color: #F9F8F7;
+    line-height: 25px;
 }
 
 .headshot img {
@@ -116,7 +117,7 @@ button {
 .container-2 {
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
+    padding: 0 20px;
 }
 
 .container-2 p {
@@ -158,6 +159,11 @@ button {
     color: #F9F8F7;
 }
 
+.bold {
+    font-size: 20px;
+    font-weight: 800;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -165,24 +171,34 @@ footer {
     align-items: center;
     background-color: #1F2937;
     color: #E5E7EB;
+    padding: 15px;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
+    .about-me {
+        margin: 0;
+    }
+
     .headshot img {
-        max-width: 99%;
-        max-height: 99%;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    .section-1 {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
     }
 }
 
 @media only screen and (max-width: 700px) {
     .headshot img {
-        visibility: hidden;
+        display: none;
     }
 
     .about-me {
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        margin: 0;
     }
 }
