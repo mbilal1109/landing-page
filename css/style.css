@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav h2 {
+    color: #F9F8F7;
+    font-size: 24px;
+    margin: 0;
+}
+
+nav a {
+    color: #F9F8F7;
+    text-decoration: none;
+}
+
+/* Section 1 */
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F2937;
+    align-items: center;
+    padding: 90px;
+}
+
+.about-me {
+    margin-right: 45px;
+}
+
+.section-1 h1 {
+    font-size: 48px;
+    color: #F9F8F7;
+    margin: 0;
+}
+
+.section-1 p {
+    color: #F9F8F7;
+}
+
+.headshot img {
+    max-width: 500px;
+    max-height: 350px;
+}
+
+button {
+    background-color: #3882F6;
+    border: 0;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 
+    Can be used for responsive design.
+    max-width: 99%;
+    max-height: 99%;
+*/
+
+/* Section 2 */
+.section-2 h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+}
+
+.container p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.cards img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #1F2937;
+    border-radius: 5px;
+}
+
+/* Section 3 */
+.section-3 h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+
+.section-3 {
+    background-color: #E5E7EB;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+.container-2 p {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.container-2 b {
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+/* Section 4 */
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.sign-up {
+    padding: 20px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.sign-up p {
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.button button {
+    border: 1px solid #F9F8F7;
+    color: #F9F8F7;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+    .headshot img {
+        max-width: 99%;
+        max-height: 99%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .headshot img {
+        visibility: hidden;
+    }
+
+    .about-me {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
